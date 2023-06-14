@@ -72,7 +72,7 @@ func TestGroupCRUD(t *testing.T) {
 	th.AssertEquals(t, removeIngressPolicy.IngressFirewallPolicyID, "")
 	th.AssertEquals(t, removeIngressPolicy.EgressFirewallPolicyID, firewall_policy_id)
 
-	t.Logf("Ingress policy removed from firewall group %s", updatedGroup.ID)
+	t.Logf("Ingress policy removed from firewall groop %s", updatedGroup.ID)
 
 	removeEgressPolicy, err := groups.RemoveEgressPolicy(client, updatedGroup.ID).Extract()
 	if err != nil {

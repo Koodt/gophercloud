@@ -116,7 +116,7 @@ func TestMinimumBandwidthRulesCRUD(t *testing.T) {
 
 	extension, err := extensions.Get(client, "qos").Extract()
 	if err != nil {
-		t.Skip("This test requires qos Neutron extension")
+		t.Skip("This test requires qos Neutron ekstension")
 	}
 	tools.PrintResource(t, extension)
 
